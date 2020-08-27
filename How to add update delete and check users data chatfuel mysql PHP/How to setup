@@ -1,0 +1,92 @@
+Strructure as follow
+
+
+Welcome Message 
+
+Check data and two quick reply your ID / another ID
+
+your_id
+
+- http://chatfuelclone.atwebpages.com/showusers/user_check.php?messenger_id={{messenger user id}}
+- http://chatfuelclone.atwebpages.com/showusers/{{messenger user id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{messenger user id}}
+- http://chatfuelclone.atwebpages.com/showusers/tryagain.json
+
+another_id
+
+user input to get user_id
+- http://chatfuelclone.atwebpages.com/showusers/user_check.php?messenger_id={{user_id}}
+- http://chatfuelclone.atwebpages.com/showusers/{{user_id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{user_id}}	- http://chatfuelclone.atwebpages.com/showusers/tryagain.json
+
+----------------------------------------------------
+add_user
+
+add data and two quick reply your ID / another ID
+
+add_you
+user input to get the below
+fname
+lname
+eaddress
+mnumber
+
+- http://chatfuelclone.atwebpages.com/showusers/user_add.php?messenger_id={{messenger user id}}&email={{eaddress}}&mobile_number={{mnumber}}&first_name={{fname}}&last_name={{lname}}
+- http://chatfuelclone.atwebpages.com/showusers/{{messenger user id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{messenger user id}}
+
+
+add_another
+user input to get the below
+fname
+lname
+eaddress
+mnumber
+user_id
+
+- http://chatfuelclone.atwebpages.com/showusers/user_add.php?messenger_id={{user_id}}&last_name={{lname}}&email={{eaddress}}&mobile_number={{mnumber}}&first_name={{fname}}
+- http://chatfuelclone.atwebpages.com/showusers/{{user_id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{user_id}}
+
+------------------------------------------------------------------
+update_user
+
+update data and two quick reply your ID / another ID
+
+update_you
+user input to get the below
+fname
+lname
+eaddress
+mobile
+
+- http://chatfuelclone.atwebpages.com/showusers/user_update.php?messenger_id={{messenger user id}}&first_name={{fname}}&last_name={{lname}}&email={{eaddress}}&mobile_number={{mobile}}
+- http://chatfuelclone.atwebpages.com/showusers/{{messenger user id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{messenger user id}}
+
+update_another
+
+user input to get the below
+fname
+lname
+eaddress
+mobile
+user_id
+
+- http://chatfuelclone.atwebpages.com/showusers/user_update.php?messenger_id={{user_id}}&first_name={{fname}}&last_name={{lname}}&email={{eaddress}}&mobile_number={{mobile}}
+- http://chatfuelclone.atwebpages.com/showusers/{{user_id}}_data.json
+- http://chatfuelclone.atwebpages.com/showusers/files_delete.php?messenger_id={{user_id}}	
+
+---------------------------------------------------------
+delete_user
+
+as per the policy you can delete only your data and one quick reply your ID
+
+delete_you
+
+Are you sure that you want to delete your data ?
+quick reply with yes or no 
+yes continue and no revert back to welcome message
+
+- http://chatfuelclone.atwebpages.com/showusers/user_delete.php?messenger_id={{messenger user id}}
+- http://chatfuelclone.atwebpages.com/showusers/{{messenger user id}}_data.json
