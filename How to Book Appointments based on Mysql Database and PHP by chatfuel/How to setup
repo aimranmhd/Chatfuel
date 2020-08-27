@@ -1,0 +1,124 @@
+How to Book Appointments based on Mysql Database and PHP by chatfuel
+database tables
+
+table one
+name : (working )
+columns ( sn , day, appointment ,status)
+
+table two
+name: ( appointments )
+columns: (sn, id, name , mobile, email, appointment, status)
+
+ 
+
+Structure as follow
+
+ 
+
+ 
+
+Text Card:
+Welcome to start booking process kindly click Start
+
+Quick Reply
+Start
+
+User Input 
+Your mobile number {{mnumber}}
+Your email address {{eaddress}}
+
+Typing 
+
+Text Card:
+wait while updating database
+
+
+change the below host to yours
+JSON API 
+POST http://chatfuelclone.atwebpagess.com/booking/update_date.php
+
+Typing 
+
+JSON API
+GET http://chatfuelclone.atwebpages.com/booking/book.json
+
+---------------------------------------------------------------------
+7 Days blocks 
+all days blocks same as the below but change only day name wherever you find it
+
+Saturday BLOCK
+
+JSON API (CHANGE THE BELOW HOST AS WELL AS THE DAY NAME AS PER THE DAY NAME)
+POST http://chatfuelclone.atwebpages.com/booking/check_day_app.php?day=Saturday&messenger_id={{messenger user id}}
+
+TYPING
+GET http://chatfuelclone.atwebpages.com/booking/{{messenger user id}}_data.json
+
+-----------------------------------------------------------
+Sunday / Monday / Tuesday / Wednesday / Thursday / Friday
+SAME AS ABOVE DATA FOR SATURDAY CHANGE ONLY THE DAY NAME WHEREVER YOUR FIND IT 
+---------------------------------------------------------------------
+another_day Block
+JSON API CHANGE THE BELOW HOST TO YOURS
+GET http://chatfuelclone.atwebpages.com/booking/book.json
+
+------------------------------------------------------------------
+cancel_app
+TEXT CARD 
+Are you sure that you would like to cancel all active appointments
+
+QUICK REPLY YES OR NO
+
+JSON API CHANGE THE BELOW HOST TO YOURS
+POST http://chatfuelclone.atwebpages.com/booking/cancel_app.php?messenger_id={{messenger user id}}
+
+TYPING 
+
+JSON API CHANGE THE BELOW HOST TO YOURS
+GET http://chatfuelclone.atwebpages.com/booking/{{messenger user id}}_data.json
+
+-------------------------------------------------------------
+book BLOCK
+
+TEXT CARD
+Kindly note that booking will be recorded under your facebook first and last name
+
+JSON API CHANGE THE BELOW HOST TO YOURS 
+
+POST http://chatfuelclone.atwebpages.com/booking/update_day_app.php?messenger_id={{messenger user id}}&first_name={{first name}}&last_name={{last name}}&email={{eaddress}}&mobile_number={{mnumber}}&appointment={{last user freeform input}}
+
+TYPING 
+JSON API CHANGE THE BELOW HOST TO YOURS 
+GET http://chatfuelclone.atwebpages.com/booking/{{messenger user id}}_data.json
+
+------------------------------
+confirm_app BLOCK
+
+TEXT CARD 
+appointment have been confirmed
+
+-----------------------------------------------
+
+contact_us BLOCK
+
+TEXT CARD WITH CALL BUTTON
+
+you can reach us on
+
+----------------------------
+rest_me BLOCK
+
+TEXT CARD
+Are you sure that you would like to reset all active appointments
+
+QUICK REPLY YES OR NO
+
+JSON API CHANGE THE BELOW HOST TO YOURS
+
+POST http://chatfuelclone.atwebpages.com/booking/reset_me.php?messenger_id={{messenger user id}}
+
+TYPING 
+
+JSON API CHANGE THE BELOW HOST TO YOURS 
+GET http://chatfuelclone.atwebpages.com/booking/{{messenger user id}}_data.json
+ 
